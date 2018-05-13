@@ -33,14 +33,14 @@ namespace BatalhaNavalConsole
                     Console.Clear();
                     Console.WriteLine(string.Format("{0}, difina as posições dos seus barcos", jogador[jog]));
                     Console.WriteLine();
-                    Console.WriteLine("MAPA DO {0}", );
+                    Console.WriteLine("MAPA DO {0}", jogador[jog].ToUpper());
                     int[] coordenadas = new int[2];
                     coordenadas = solicitaCoordenadas(string.Format("Coordenadas do barco {0}: ", b + 1));
 
                     area[jog, coordenadas[0], coordenadas[1]] = '█';
                 }
 
-                imprimeArea(area, jog);
+                imprimeArea(area, jog); 
                 Console.ReadLine();
             }
         }
